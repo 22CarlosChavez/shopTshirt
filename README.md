@@ -1,1 +1,3 @@
 # shopTshirt
+
+La creación de esta sección llamada shoptshirt fue una idea mia en un dia aburrido...
