@@ -1,0 +1,96 @@
+:root{
+    --tituloTshirt : #fffffF;
+    --colorBtnTshirt : #000000;
+    --bgnav : orange;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    /*1 rem = 10px*/
+    font-family: arial;
+    background-color: cadetblue;
+}
+
+/*********************************index.html***********************************************/
+.container__main{
+    text-align: justify;
+    padding: 1rem;
+}
+.container__footer{
+    background-color: var(--bgnav);
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.footer__enlace{
+    color: var(--colorBtnTshirt);
+    text-decoration: none;
+}
+.footer__enlace:hover{
+    color: var(--tituloTshirt);
+    text-decoration: underline;
+}
+
+/*********************************noticias.html**********************************************/
+.card{
+    text-align: center;
+    background-color: var(--bgnav);
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-between;
+}
+.card__enlace{
+    padding: 4rem;
+    text-decoration: none;
+    color: var(--tituloTshirt);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.card__enlace:hover{
+    color: var(--colorBtnTshirt);
+}
+.card__titulo{
+    font-weight: bold;
+}
+.card__producto{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+@media ( min-width : 768px ) and ( max-width : 1024px ){
+    .card__producto {
+        grid-template-columns: repeat( 2 , 1fr);
+        gap: 1.7rem;
+    }
+}
+@media ( min-width : 250px ) and ( max-width : 767px ){
+    .card__producto {
+       grid-template-columns: repeat( 1 , 1fr) ;
+       gap: 2rem;
+    }
+    .card__enlace{
+        padding: 2rem;
+    }
+}
+.t-shirt{
+    width: 20rem;
+}
+.card__select{
+    margin: 1rem;
+    padding: .8rem;
+    width: 20rem;
+    background-color: rgba(225, 225, 225, .7);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+.card__submit{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--colorBtnTshirt);
+    color: var(--tituloTshirt);
+    border-radius: .2rem;
+}
